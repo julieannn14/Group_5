@@ -1,0 +1,9 @@
+footer{
+    padding: 10px 16px;
+    background: #8fbade;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}

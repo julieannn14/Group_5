@@ -1,0 +1,193 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 12px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #8fbade;
+  padding: 0 20px;
+}
+.profile-image-wrapper {
+  width: 100%;
+  height: 19vw;
+  background: white;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.profile-image {
+  /* position: relative; */
+  max-width: 300px;
+  height: 300px;
+  width: 100%;
+  max-height: 300px;
+  background-repeat: no-repeat;
+  background-size: 24vw;
+  background-position: top center;
+  margin: auto;
+}
+.profile-image-wrapper img {
+  position: relative;
+  margin-bottom: -60px;
+  width: 100% !important;
+}
+.icon-wrapper img {
+  max-width: 30px;
+}
+.icon-wrapper ul {
+  display: flex;
+  justify-content: center;
+  padding: unset;
+  list-style: none;
+  gap: 20px;
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+ background-image: url(https://bens.org/wp-content/uploads/2021/12/office-buildings-1400x934.jpg);
+ color: #f4f2f2;
+ min-height: 450px;
+ display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* commment css */
+.comment-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.rating label {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-image: url("https://www.pngkey.com/png/detail/118-1184711_star-rating-5-stars-transparent-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rating input[type="radio"]:checked ~ label {
+  background-image: url("https://t4.ftcdn.net/jpg/04/34/77/07/360_F_434770749_P41NaUBO7yMyQZuFN9iWYE54Nqhx1VmG.jpg");
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+@media (max-width:768px){
+  .column {
+    /* float: left; */
+    width: 50%;
+    margin-bottom: 12px;
+    padding: 0 8px;
+}
+.profile-image-wrapper{
+  height: 33vw;
+}
+.profile-image{
+  background-size: 38vw;
+}
+.row {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+}
+@media (max-width:500px){
+  .profile-image-wrapper{
+    height: 65vw;
+  }
+  .profile-image{
+    background-size: 85vw;
+  }
+  .column{
+    width: 100%;
+  }
+}

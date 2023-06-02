@@ -1,0 +1,32 @@
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    padding: 20px 10px;
+    justify-content: space-between;
+    background: #0000006e;
+    }
+    .logo-text h1 {
+    color: beige;
+    }
+   
+    .navigation-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-container img {
+    width: 56px;
+    margin-right: 20px;
+    }
+    .nav-menu-list ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    }
+    .nav-menu-list li a {
+    font-family: fantasy;
+    text-decoration: none;
+    color: #ffffff;
+    }
